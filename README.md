@@ -160,7 +160,7 @@ v0.8.3
 
 - **Headless Automation** — Playwright-powered Chromium for AI-driven web browsing
 - **7 LLM Tools** — Navigate, click, type, screenshot, evaluate JavaScript, extract content, fill forms
-- **Workflow Persistence** — Browser automation workflows stored in DB for replay and audit
+- **Workflow Persistence** — Browser workflows stored in DB for replay and audit
 
 ### Skills Platform
 
@@ -766,10 +766,10 @@ The Autonomous Hub is a unified command center for managing all autonomous agent
 Describe what you want in plain English and the AI designs the agent configuration:
 
 1. Open the AI Creator modal from the hub header
-2. Describe your agent (e.g., "Monitor my GitHub PRs daily")
+2. Describe your agent (e.g., \"Monitor my GitHub PRs daily\")
 3. The AI designs a configuration with name, mission, schedule, tools, and cost estimate
 4. Review the preview card and refine through conversation
-5. Click "Create This Agent" to deploy
+5. Click \"Create This Agent\" to deploy
 
 The creator uses a dedicated agent with a specialized system prompt, ensuring it acts as an agent designer rather than a general chatbot.
 
@@ -788,7 +788,7 @@ OwnPilot has **250+ tools** organized into **33 categories**. Rather than sendin
 
 ### Tool Categories
 
-> **Note on the count:** This table lists **33** categories, while [`docs/TOOLS.md`](docs/TOOLS.md) documents **27**. Both are correct — the difference is granularity, not drift. This table splits **Utilities** into 5 rows (Math, Text, Date, Data, Gen) and breaks out **Artifacts** and **Browser** as their own rows; `TOOLS.md` groups Utilities as a single section and folds those into related groups (33 = 27 + 4 Utilities sub-rows + Artifacts + Browser). Don't "reconcile" one to the other.
+> **Note on the count:** This table lists **33** categories, while [`docs/TOOLS.md`](docs/TOOLS.md) documents **27**. Both are correct — the difference is granularity, not drift. This table splits **Utilities** into 5 rows (Math, Text, Date, Data, Gen) and breaks out **Artifacts** and **Browser** as their own rows; `TOOLS.md` groups Utilities as a single section and folds those into related groups (33 = 27 + 4 Utilities sub-rows + Artifacts + Browser). Don't \"reconcile\" one to the other.
 
 | Category             | Examples                                                                 |
 | -------------------- | ------------------------------------------------------------------------ |
@@ -1064,19 +1064,19 @@ Proactive automation with 4 trigger types:
 
 | Type        | Description            | Example                                    |
 | ----------- | ---------------------- | ------------------------------------------ |
-| `schedule`  | Cron-based timing      | "Every Monday at 9am, summarize my week"   |
-| `event`     | Fired on data changes  | "When a new task is added, notify me"      |
-| `condition` | IF-THEN rules          | "If expenses > $500/day, alert me"         |
-| `webhook`   | External HTTP triggers | "When GitHub webhook fires, create a task" |
+| `schedule`  | Cron-based timing      | \"Every Monday at 9am, summarize my week\"   |
+| `event`     | Fired on data changes  | \"When a new task is added, notify me\"      |
+| `condition` | IF-THEN rules          | \"If expenses > $500/day, alert me\"         |
+| `webhook`   | External HTTP triggers | \"When GitHub webhook fires, create a task\" |
 
 ### Heartbeats
 
 Natural language periodic scheduling:
 
 ```
-"every weekday at 9am" → 0 9 * * 1-5
-"twice a day"          → 0 9,18 * * *
-"every 30 minutes"     → */30 * * * *
+\"every weekday at 9am\" → 0 9 * * 1-5
+\"twice a day\"          → 0 9,18 * * *
+\"every 30 minutes\"     → */30 * * * *
 ```
 
 The AI parses natural language into cron expressions for trigger scheduling.
@@ -1515,6 +1515,10 @@ LOG_LEVEL=info
 ---
 
 ## Deployment
+
+### ☁️ One-Click Deploy
+
+[![Deploy on RepoCloud](https://d16t0pc4846x52.cloudfront.net/deploylobe.svg)](https://repocloud.io/details/ownpilot/)
 
 ### Ports & Services
 
